@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prajwal-Deep Hospital | Pediatric & Neonatal Super Specialty Center, Pandharpur</title>
+    <meta name="description" content="Prajwal-Deep Hospital Pandharpur - Advanced Level III NICU, PICU, HFOV Ventilator Support & 24/7 Child Emergency Care by Dr. Neeraj Deepak Shaha.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Rozha+One&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        medical: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        emergency: '#dc2626'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .glass-header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#0ea5e9 0.75px, transparent 0.75px), radial-gradient(#0ea5e9 0.75px, #f8fafc 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            background-opacity: 0.05;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased">
+
+    <!-- Top Emergency Bar -->
+    <div class="bg-gradient-to-r from-medical-900 via-slate-900 to-medical-900 text-white text-xs sm:text-sm py-2 px-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-red-600 text-white animate-pulse">
+                    24x7 EMERGENCY
+                </span>
+                <span class="hidden md:inline text-slate-300">
+                    <i class="fa-solid fa-location-dot text-medical-500 mr-1"></i> ठाकरे चौक, लिंक रोड, पंढरपुर
+                </span>
+            </div>
+            <div class="flex items-center space-x-4 font-medium">
+                <a href="tel:+919156814040" class="hover:text-medical-500 transition flex items-center">
+                    <i class="fa-solid fa-phone-volume text-red-400 mr-1.5"></i> +91 91568 14040
+                </a>
+                <span class="text-slate-500">|</span>
+                <span class="text-emerald-400 flex items-center">
+                    <i class="fa-solid fa-clock mr-1"></i> खुला: 24 घंटे उपलब्ध
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="glass-header sticky top-9 z-40 border-b border-slate-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-3">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-medical-700 to-medical-500 flex items-center justify-center text-white text-2xl shadow-lg shadow-medical-500/20">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 leading-none block">
+                            Prajwal-Deep
+                        </span>
+                        <span class="text-xs font-medium text-medical-600 tracking-wider uppercase block">
+                            Hospital & Critical Care Center
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-slate-700">
+                    <a href="#home" class="hover:text-medical-600 transition">Home</a>
+                    <a href="#about" class="hover:text-medical-600 transition">About Us</a>
+                    <a href="#services" class="hover:text-medical-600 transition">NICU & Services</a>
+                    <a href="#doctor" class="hover:text-medical-600 transition">Our Specialist</a>
+                    <a href="#facilities" class="hover:text-medical-600 transition">Facilities</a>
+                    <a href="#contact" class="hover:text-medical-600 transition">Contact</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden lg:flex items-center space-x-3">
+                    <a href="#appointment" class="px-5 py-2.5 bg-medical-600 hover:bg-medical-700 text-white rounded-lg font-semibold text-sm shadow-md hover:shadow-lg transition duration-200">
+                        <i class="fa-regular fa-calendar-check mr-2"></i>Book Appointment
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobileMenuBtn" class="text-slate-700 hover:text-medical-600 focus:outline-none p-2" aria-label="Open Menu">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block py-2 text-slate-700 font-medium hover:text-medical-600">Home</a>
+            <a href="#about" class="block py-2 text-slate-700 font-medium hover:text-medical-600">About Us</a>
+            <a href="#services" class="block py-2 text-slate-700 font-medium hover:text-medical-600">NICU & Services</a>
+            <a href="#doctor" class="block py-2 text-slate-700 font-medium hover:text-medical-600">Our Specialist</a>
+            <a href="#facilities" class="block py-2 text-slate-700 font-medium hover:text-medical-600">Facilities</a>
+            <a href="#contact" class="block py-2 text-slate-700 font-medium hover:text-medical-600">Contact</a>
+            <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+                <a href="#appointment" class="w-full text-center px-4 py-2.5 bg-medical-600 text-white rounded-lg font-semibold text-sm">
+                    Book Appointment
+                </a>
+                <a href="tel:+919156814040" class="w-full text-center px-4 py-2.5 bg-red-600 text-white rounded-lg font-semibold text-sm">
+                    <i class="fa-solid fa-phone mr-1"></i> Call Emergency
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative hero-pattern pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-medical-50 border border-medical-200 text-medical-700 text-xs sm:text-sm font-semibold">
+                        <i class="fa-solid fa-shield-heart text-medical-600"></i> पंढरपुर का अत्याधुनिक बाल एवं शिशु क्रिटिकल केयर सेंटर
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                        हर नवजात शिशु और बच्चे की सेहत के लिए <span class="text-transparent bg-clip-text bg-gradient-to-r from-medical-600 to-medical-800">समर्पित सुपर स्पेशियल्टी सेवा</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed mx-auto lg:mx-0">
+                        प्रज्वल-दीप हॉस्पिटल में आधुनिक <strong>Level III NICU</strong>, <strong>Level II PICU</strong> और <strong>HFOV वेंटिलेटर सपोर्ट</strong> के साथ 24 घंटे आपातकालीन बाल चिकित्सा सेवा उपलब्ध है।
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="tel:+919156814040" class="w-full sm:w-auto px-7 py-3.5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl shadow-lg shadow-red-600/20 transition duration-200 flex items-center justify-center gap-2 text-base">
+                            <i class="fa-solid fa-phone-volume text-lg"></i> 24x7 इमरजेंसी कॉल
+                        </a>
+                        <a href="#appointment" class="w-full sm:w-auto px-7 py-3.5 bg-white border border-slate-300 hover:border-medical-600 text-slate-800 hover:text-medical-600 font-semibold rounded-xl transition duration-200 flex items-center justify-center gap-2 text-base shadow-sm">
+                            <i class="fa-solid fa-calendar-check text-medical-600"></i> अपॉइंटमेंट बुक करें
+                        </a>
+                    </div>
+
+                    <!-- Highlight Badges -->
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-200/80">
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-medical-700">Level 3</p>
+                            <p class="text-xs sm:text-sm text-slate-500 font-medium">NICU केयर</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-medical-700">24x7</p>
+                            <p class="text-xs sm:text-sm text-slate-500 font-medium">इमरजेंसी सेवा</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-medical-700">HFOV</p>
+                            <p class="text-xs sm:text-sm text-slate-500 font-medium">वेंटिलेटर सपोर्ट</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md bg-gradient-to-tr from-medical-600 to-medical-800 rounded-3xl p-6 shadow-2xl text-white">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between border-b border-white/20 pb-4">
+                                <div>
+                                    <h2 class="font-bold text-lg">डॉ. नीरज दीपक शहा</h2>
+                                    <p class="text-xs text-medical-100">MD (Pediatrics), IAP Fellow</p>
+                                </div>
+                                <span class="bg-emerald-500 text-white text-xs px-2.5 py-1 rounded-full font-semibold">Available 24x7</span>
+                            </div>
+
+                            <p class="text-sm text-slate-100 leading-relaxed">
+                                पीडियाट्रिक और नियोनेटल क्रिटिकल केयर में विशेष फेलोशिप प्राप्त, नवजात शिशुओं की गहन चिकित्सा में विश्वसनीय नाम।
+                            </p>
+
+                            <div class="bg-white/10 rounded-xl p-4 backdrop-blur-sm space-y-2 text-xs">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                    <span>प्री-मेच्योर बेबी स्पेशल इनक्यूबेटर केयर</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                    <span>सेंट्रल मॉनिटरिंग सिस्टम & मल्टीस्पेशियल्टी</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                    <span>पीडियाट्रिक न्यूरोलॉजी & फिजियोथेरेपी</span>
+                                </div>
+                            </div>
+
+                            <a href="tel:+919156814040" class="block w-full py-3 bg-white text-medical-900 text-center font-bold rounded-xl hover:bg-medical-50 transition shadow">
+                                <i class="fa-solid fa-headset mr-2 text-medical-600"></i> सीधे बात करें: +91 91568 14040
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-bold uppercase tracking-wider text-medical-600 bg-medical-50 px-3 py-1 rounded-full">
+                    विशेषज्ञ चिकित्सा सेवाएं
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">
+                    आधुनिक क्रिटिकल केयर और बाल चिकित्सा
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base">
+                    हम पंढरपुर और आसपास के क्षेत्रों के बच्चों के लिए आधुनिक तकनीकों से लैस सुपर स्पेशियल्टी सुविधाएं प्रदान करते हैं।
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-6 bg-slate-50 hover:bg-medical-50/50 rounded-2xl border border-slate-200 hover:border-medical-300 transition duration-300 group shadow-sm hover:shadow-md">
+                    <div class="w-12 h-12 rounded-xl bg-medical-600 text-white flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-baby"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Level III NICU</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        समय से पहले जन्मे (Pre-term) और कम वजन वाले नवजात शिशुओं के लिए अत्याधुनिक इनक्यूबेटर, फोटोथेरेपी और गहन देखभाल।
+                    </p>
+                    <span class="text-medical-600 font-semibold text-xs flex items-center gap-1">24x7 मॉनिटरिंग <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-6 bg-slate-50 hover:bg-medical-50/50 rounded-2xl border border-slate-200 hover:border-medical-300 transition duration-300 group shadow-sm hover:shadow-md">
+                    <div class="w-12 h-12 rounded-xl bg-medical-600 text-white flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-lungs"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Level II PICU & HFOV</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        गंभीर रूप से बीमार बच्चों के लिए पीडियाट्रिक इंटेंसिव केयर और हाई-फ्रीक्वेंसी ऑसिलेटरी वेंटिलेशन (HFOV) सपोर्ट।
+                    </p>
+                    <span class="text-medical-600 font-semibold text-xs flex items-center gap-1">एडवांस्ड लाइफ सपोर्ट <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-6 bg-slate-50 hover:bg-medical-50/50 rounded-2xl border border-slate-200 hover:border-medical-300 transition duration-300 group shadow-sm hover:shadow-md">
+                    <div class="w-12 h-12 rounded-xl bg-medical-600 text-white flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">पीडियाट्रिक न्यूरोलॉजी</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        बच्चों में मिर्गी, सेरेब्रल पाल्सी, और तंत्रिका तंत्र से जुड़ी बीमारियों की विशेष जांच व आधुनिक इलाज।
+                    </p>
+                    <span class="text-medical-600 font-semibold text-xs flex items-center gap-1">स्पेशलिस्ट केयर <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-6 bg-slate-50 hover:bg-medical-50/50 rounded-2xl border border-slate-200 hover:border-medical-300 transition duration-300 group shadow-sm hover:shadow-md">
+                    <div class="w-12 h-12 rounded-xl bg-medical-600 text-white flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-person-walking"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">डेवलपमेंटल & फिजियोथेरेपी</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        बच्चों के शारीरिक विकास, बोलने व चलने में देरी (Developmental Delay) के लिए विशेष पीडियाट्रिक फिजियोथेरेपी।
+                    </p>
+                    <span class="text-medical-600 font-semibold text-xs flex items-center gap-1">ग्रोथ असेसमेंट <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="p-6 bg-slate-50 hover:bg-medical-50/50 rounded-2xl border border-slate-200 hover:border-medical-300 transition duration-300 group shadow-sm hover:shadow-md">
+                    <div class="w-12 h-12 rounded-xl bg-medical-600 text-white flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">टीकाकरण & जनरल OPD</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        राष्ट्रीय और अंतरराष्ट्रीय मानकों के अनुसार सभी अनिवार्य टीके (Vaccination) एवं नियमित स्वास्थ्य जांच।
+                    </p>
+                    <span class="text-medical-600 font-semibold text-xs flex items-center gap-1">नियमित चेकअप <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="p-6 bg-slate-50 hover:bg-medical-50/50 rounded-2xl border border-slate-200 hover:border-medical-300 transition duration-300 group shadow-sm hover:shadow-md">
+                    <div class="w-12 h-12 rounded-xl bg-red-600 text-white flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-truck-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">24×7 इमरजेंसी & एम्बुलेंस</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        नवजात शिशुओं और बच्चों के लिए किसी भी आकस्मिक स्थिति में त्वरित रिस्पांस और लाइफ-सपोर्ट एम्बुलेंस सेवा।
+                    </p>
+                    <span class="text-red-600 font-semibold text-xs flex items-center gap-1">हमेशा तत्पर <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Section -->
+    <section id="doctor" class="py-20 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200">
+                <div class="grid lg:grid-cols-12 items-center">
+                    
+                    <div class="lg:col-span-5 bg-gradient-to-br from-medical-800 to-medical-900 p-8 sm:p-12 text-white flex flex-col justify-center items-center text-center">
+                        <div class="w-40 h-40 sm:w-48 sm:h-48 rounded-full border-4 border-white/20 bg-white/10 flex items-center justify-center text-6xl text-white mb-6 shadow-inner">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">डॉ. नीरज दीपक शहा</h3>
+                        <p class="text-medical-200 text-sm mt-1">MD (Pediatrics)</p>
+                        <p class="text-xs text-medical-100 bg-white/10 px-3 py-1 rounded-full mt-3">
+                            IAP Fellowship in Pediatric & Neonatal Critical Care
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-7 p-8 sm:p-12 space-y-6">
+                        <div class="space-y-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-medical-600">Chief Consultant & Pediatrician</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+                                विशेषज्ञता और अनुभव से सुरक्षित बचपन
+                            </h2>
+                        </div>
+
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                            डॉ. नीरज दीपक शहा बाल एवं नवजात शिशु क्रिटिकल केयर के क्षेत्र में एक प्रतिष्ठित विशेषज्ञ हैं। वे समय से पूर्व जन्मे बच्चों की जटिल चिकित्सा और बच्चों की आपातकालीन बीमारियों के उपचार में वर्षों का अनुभव रखते हैं।
+                        </p>
+
+                        <div class="grid sm:grid-cols-2 gap-4 text-sm text-slate-700">
+                            <div class="flex items-center space-x-3">
+                                <i class="fa-solid fa-square-check text-medical-600"></i>
+                                <span>पीडियाट्रिक इंटेंसिव केयर एक्सपर्ट</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fa-solid fa-square-check text-medical-600"></i>
+                                <span>नवजात शिशु वेंटिलेशन स्पेशलिस्ट</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fa-solid fa-square-check text-medical-600"></i>
+                                <span>बाल विकास व न्यूरोलॉजी परामर्श</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fa-solid fa-square-check text-medical-600"></i>
+                                <span>सहानुभूतिपूर्ण और व्यक्तिगत देखभाल</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 flex flex-wrap gap-4 items-center">
+                            <a href="#appointment" class="px-6 py-3 bg-medical-600 hover:bg-medical-700 text-white font-semibold rounded-xl transition shadow">
+                                परामर्श का समय लें
+                            </a>
+                            <a href="tel:+919156814040" class="px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold rounded-xl transition">
+                                <i class="fa-solid fa-phone mr-1"></i> कॉल करें
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment & Inquiry Section -->
+    <section id="appointment" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-wider text-medical-600 bg-medical-50 px-3 py-1 rounded-full">
+                        ऑनलाइन अपॉइंटमेंट
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+                        अपने बच्चे के स्वास्थ्य के लिए आज ही अपॉइंटमेंट बुक करें
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        फॉर्म भरें और हमारी टीम आपसे तुरंत संपर्क कर अपॉइंटमेंट की पुष्टि करेगी। आपातकालीन स्थिति में कृपया सीधे हेल्पलाइन पर कॉल करें।
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-medical-100 text-medical-600 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">आपातकालीन संपर्क</h4>
+                                <p class="text-slate-600 text-sm">+91 91568 14040</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-medical-100 text-medical-600 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">स्थान</h4>
+                                <p class="text-slate-600 text-sm">C.S. No. 55/1/16/17, ठाकरे चौक, लिंक रोड, पंढरपुर, महाराष्ट्र - 413304</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Form Card -->
+                <div class="lg:col-span-6 bg-slate-50 p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-lg">
+                    <form id="appointmentForm" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1">माता-पिता / अभिभावक का नाम</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-medical-500 bg-white text-sm" placeholder="उदा. राहुल पाटिल">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-1">मोबाइल नंबर</label>
+                                <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-medical-500 bg-white text-sm" placeholder="उदा. 9876543210">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-1">बच्चे की उम्र</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-medical-500 bg-white text-sm" placeholder="उदा. 2 वर्ष / 3 माह">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1">सेवा / समस्या का प्रकार</label>
+                            <select class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-medical-500 bg-white text-sm text-slate-700">
+                                <option value="general">जनरल चेकअप (General OPD)</option>
+                                <option value="vaccination">टीकाकरण (Vaccination)</option>
+                                <option value="nicu">NICU / नवजात शिशु देखभाल</option>
+                                <option value="neurology">पीडियाट्रिक न्यूरोलॉजी परामर्श</option>
+                                <option value="physio">डेवलपमेंटल फिजियोथेरेपी</option>
+                                <option value="other">अन्य समस्या</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1">संदेश (वैकल्पिक)</label>
+                            <textarea rows="3" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-medical-500 bg-white text-sm" placeholder="बच्चे की समस्या का संक्षिप्त विवरण लिखें..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 bg-medical-600 hover:bg-medical-700 text-white font-bold rounded-xl shadow-md transition duration-200">
+                            अपॉइंटमेंट रिक्वेस्ट भेजें
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Map Section -->
+    <section id="contact" class="py-16 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-wider text-medical-400 bg-medical-950 px-3 py-1 rounded-full border border-medical-800">
+                        Hospital Location
+                    </span>
+                    <h2 class="text-3xl font-extrabold tracking-tight">
+                        आसानी से पहुंचें हमारे अस्पताल
+                    </h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        पंढरपुर शहर के केंद्र में ठाकरे चौक, लिंक रोड पर स्थित, जहां एम्बुलेंस व निजी वाहनों से आसानी से पहुंचा जा सकता है।
+                    </p>
+
+                    <div class="space-y-3 text-sm text-slate-300">
+                        <p class="flex items-center gap-3">
+                            <i class="fa-solid fa-map-location-dot text-medical-400 text-lg"></i>
+                            <span>C.S. No. 55/1/16/17, ठाकरे चौक, लिंक रोड, पंढरपुर - 413304</span>
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone-volume text-medical-400 text-lg"></i>
+                            <span>+91 91568 14040</span>
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <i class="fa-solid fa-ambulance text-red-400 text-lg"></i>
+                            <span>24 घंटे आपातकालीन सेवा चालू</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="lg:col-span-7 h-72 sm:h-96 rounded-2xl overflow-hidden shadow-2xl border border-slate-700">
+                    <iframe 
+                        title="Hospital Location Map"
+                        src="https://maps.google.com/maps?q=Prajwal%20Deep%20Hospital%20Pandharpur&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                        class="w-full h-full border-0" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 text-xs py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+            <div>
+                <p class="font-semibold text-slate-200 text-sm">Prajwal-Deep Hospital & Critical Care Center</p>
+                <p class="mt-1">Dedicated Pediatric & Neonatal Care in Pandharpur.</p>
+            </div>
+            <p>© 2026 Prajwal-Deep Hospital. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons for Mobile / Quick Contact -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/919156814040?text=Hello%20Prajwal-Deep%20Hospital,%20I%20want%20to%20inquire%20about%20pediatric%20care" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl shadow-xl hover:scale-110 transition duration-200" 
+           aria-label="WhatsApp Us">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <!-- Call Button -->
+        <a href="tel:+919156814040" 
+           class="w-14 h-14 bg-red-600 hover:bg-red-700 text-white rounded-full flex items-center justify-center text-xl shadow-xl hover:scale-110 transition duration-200 animate-bounce" 
+           aria-label="Call Emergency">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close Mobile Menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Simple Form Submission Handler
+        const form = document.getElementById('appointmentForm');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('धन्यवाद! आपका अपॉइंटमेंट अनुरोध प्राप्त हो गया है। हमारी टीम जल्द ही आपसे संपर्क करेगी।');
+            form.reset();
+        });
+    </script>
+</body>
+</html>
